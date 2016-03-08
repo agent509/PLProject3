@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Customer/Employee</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="customer.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Create Customers/Employees</h1>
+
+        <form>
+        <label for="customer">Customer:</label>
+        <input type="radio" name="choice" value="customer" id="customerbutton"><br>
+        <label for="employee">Employee:</label>
+        <input type="radio" name="choice" value="employee" id="employeebutton"><br>
+        </form>
+
+        <br>
+        <form id="customer_form" name="customer_form">
+          <label for="firstname1">First Name:</label>
+          <input type="text" id="firstname1">
+          <span id="firstname_err1">*</span><br>
+          
+          <label for="lastname1">Last Name:</label>
+          <input type="text" id="lastname1">
+          <span id="lastname_err1">*</span><br>
+          
+          <label for="email1">Email:</label>
+          <input type="text" id="email1">
+          <span id="email_err1">*</span><br>
+          
+          <label for="num1">Customer Number:</label>
+          <input type="text" id="num1">
+          <span id="num_err1">*</span><br>
+          
+          <label>&nbsp;</label>
+          <input type="button" id="submit1" value="Submit"><br>
+      </form>
+
+        <form id="employee_form" name="employee_form">
+          <label for="firstname2">First Name:</label>
+          <input type="text" id="firstname2">
+          <span id="firstname_err2">*</span><br>
+          
+          <label for="lastname2">Last Name:</label>
+          <input type="text" id="lastname2">
+          <span id="lastname_err2">*</span><br>
+          
+          <label for="email2">Email:</label>
+          <input type="text" id="email2">
+          <span id="email_err2">*</span><br>
+          
+          <label for="num2">Social Security Number:</label>
+          <input type="text" id="num2">
+          <span id="num_err2">*</span><br>
+          
+          <label>&nbsp;</label>
+          <input type="button" id="submit2" value="Submit"><br>
+      </form>
+
+      <h3 id="head">You Entered:</h3>
+      <table id="table">
+      <tr><td>First Name:</td><td id='firstname'></td></tr>
+      <tr><td>Last Name:</td><td id='lastname'></td></tr>
+      <tr><td>Email:</td><td id='email'></td></tr>
+      <tr><td id="numtype">Number:</td><td id='num'></td></tr>
+      </table>
+
+
+    </main>
+</body>
+</html>
+
